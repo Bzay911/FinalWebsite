@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Himalayan Homes</title>
+    <link rel="stylesheet" href="/css/signup.css" />
+    <link rel="stylesheet" href="/css/root.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <div class="navbar">
+      <div class="logo"><img src="/images/HH-logo.png" alt="Logo" /></div>
+      <div class="navcontents">
+        <ul>
+          <a href="index.html">Home</a>
+          <a href="about.html">About us</a>
+          <a href="thingsToDo.html">Things to do</a>
+          <a href="signup.html">Sign up</a>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Signup part -->
+    <div class="signup">
+      <!-- <div class="subText">
+        <h1>Be a</h1>
+        <h1>part of Himalayan</h1>
+      </div> -->
+
+      <div class="main">
+        <div class="mainItems">
+          <img src="/images/signup.png" alt="Singup main image" />
+
+          <div class="form">
+            <form >
+              <p>Full name</p>
+              <input
+                type="text"
+                class="form-control f_name"
+                id="exampleFormControlInput1"
+                required
+                placeholder="First name"
+              /><br /><br />
+
+              
+              <p>Email address</p>
+              <input
+                type="email"
+                class="form-control email"
+                id="exampleFormControlInput1"
+                required
+                placeholder="name@example.com"
+              /><br /><br />
+
+              <p>Password</p>
+              <input
+                type="password"
+                class="form-control password"
+                id="exampleFormControlInput1"
+                required
+                placeholder="password"
+              /><br /><br />
+
+
+              <!-- <input type="date" name="" id=""> -->
+              <input
+                class="btn btn-primary submit_btn"
+                type="submit"
+                id="submit"
+                value="Submit"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- Footer -->
+  <div class="footer">
+    <div class="foot-top">
+      <div class="First">
+        <a href="/">Major attractions</a>
+        <a href="/">Plan your trip</a>
+        <a href="/">Review and rating</a>
+        <a href="/">Login/Sign up</a>
+        <a href="/">Explore more..</a>
+      </div>
+      <div class="Second">
+        <h4>Our Locations</h4>
+
+        <div class="location">
+
+          <div class="i-1">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Yala Kharka</p>
+          </div>
+
+          <div class="i-1">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Abu Khaireni</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="Third">
+        <h4>Contact Us</h4>
+        <p>+977-986223532</p>
+        <h4>Email us at</h4>
+        <p>homestaynep21@gmail.com</p>
+      </div>
+    </div>
+    <div class="footend">
+      <p>Langtang Homestay</p>
+      <div class="vertical-line"></div>
+      <p>+977-986223532</p>
+      <div class="vertical-line"></div>
+      <div class="l-div">
+        <i class="fa-solid fa-location-dot"></i>
+      <p>Yala Kharka</p>
+      </div>
+      
+    </div>
+    </div>
+    
+
+    <script>
+      const f_name = document.querySelector(".f_name")
+      const password = document.querySelector(".password")
+      const email = document.querySelector(".email")
+      const submit_btn = document.querySelector(".submit_btn")
+
+      let users=[]
+
+      submit_btn.addEventListener("click",(e)=>{
+        e.preventDefault()
+        let user = {
+          f_name:f_name.value,
+          password:password.value,
+          email:e.value
+        }
+        users.push(user)
+        localStorage.setItem("users",JSON.stringify(users))
+        window.location.href="/"
+      })
+      
+    </script>
+
+  </body>
+</html>

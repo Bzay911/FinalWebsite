@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background-color: white;
+}
+
+/* Navbar */
+.navbar{
+    display: flex;
+    position: absolute!important;
+    top: 0;
+    z-index: 1;
+    width: 96%;
+    margin: 10px 2%;
+    background-color: rgba(255, 255, 255, 0.863);
+    margin: 1rem 2rem;
+    /* border: 1px solid white; */
+    border-radius: 15px;
+    box-shadow: 0 0.375rem 1.125rem rgba(49,57,70,.19);
+}
+
+.logo{
+    flex: 1;
+}
+
+.logo img {
+    height: 7rem;
+    width: 8rem;
+    position: absolute;
+    top: -12px;
+}
+
+
+.navcontents{
+    padding: 2%;
+    flex: 2;
+}
+
+.navcontents ul{
+    display: flex;
+    list-style-type: none;
+    gap: 16%;
+    margin-bottom: 0;
+}
+
+.navcontents ul a{
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Footer */
+.footer{
+    height: 60vh;
+    background-color: rgb(203, 195, 195);
+}
+.foot-top{
+    display: flex;
+}
+
+.First{
+    height: 50vh;
+    flex: 1;
+    /* background-color: red;    */
+    padding-left: 3rem;
+    padding-top: 3rem;
+}
+.First a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin: 1rem 0rem;
+}
+
+.Second{
+    padding-left: 3rem;
+    padding-top: 4rem;
+    height: 50vh;
+    /* background-color: yellowgreen;  */
+    flex: 1;
+    
+}
+.location{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem 0rem;
+
+}
+
+.i-1{
+    display: flex;
+    gap: 1rem;
+}
+
+
+.Third{
+    height: 50vh;
+    /* background-color: green;    */
+    flex: 1;
+    padding-left: 3rem;
+    padding-top: 3rem;
+}
+
+.Third p, .Third h4{
+    display: block;
+    margin: 1rem 0rem;
+
+}
+.vertical-line{
+    background-color: black;
+    width: 2px;
+    height: 1.5rem;
+}
+.footend{
+    display: flex;
+    margin-left: 3rem;
+    gap: 12rem;
+}
+.l-div{
+    display: flex;
+    gap: 1rem;
+}

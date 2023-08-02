@@ -1,0 +1,66 @@
+.image{
+    height: 500px;
+    width: 100vw;
+}
+ 
+/* body */
+
+.title{
+    color:#3A6B34;
+    text-align: center;  
+    margin:  4rem 2rem;
+}
+
+.text{
+    margin: 20px 50px;
+    padding: 15px;
+    text-align: justify;
+}
+
+
+.grid{
+    margin-bottom: 14rem;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    place-items: center;
+}
+
+.grid img{
+    object-fit: cover;
+}
+.card{
+    width: 300px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    color: #3A6B34;
+}
+.card a{
+    text-decoration: none;
+    color: black;
+}
+
+.card:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+.cardTitle{
+    margin-left: 20px;
+}
+
+.cardText{
+    text-align: justify;
+}
+
+.checked{
+    color: orange;
+}
+
+.rating{
+    margin-left: 20px;
+}
+
+.time{
+    margin: 10px 20px;
+}

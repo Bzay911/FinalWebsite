@@ -1,0 +1,309 @@
+*{
+    /* background-color: aliceblue; */
+    margin: 0; 
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    /* max-width: 70vw; */
+}
+
+
+/*header  */
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 0 3%;
+}
+
+.logo{
+    flex: 1;
+}
+
+.logo img{
+    height: 6rem;
+    width: 6rem;
+}
+
+.navcontents{
+    padding: 2%;
+    flex: 2;
+}
+
+.navcontents ul{
+    display: flex;
+    list-style-type: none;
+    gap: 16%;
+}
+
+.navcontents ul a{
+    /* font-weight: bold; */
+    text-decoration: none;
+    color:black;
+}
+
+/* Body */
+
+.head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.book{
+    height: 55px;
+    width: 150px;
+    margin-right: 300px;
+    margin-top: 50px;
+    border: none;
+    background: #3A6B34;
+    color: white;
+    border-radius: 20px;
+    font-size: 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+.gallery{
+    display: flex;
+    gap: 5px;
+    margin: 0 50px;
+}
+
+.mainImage{
+    height: 61vh;
+    width: 45vw;
+    object-fit: cover;
+}
+
+.gridImage{
+    height: 30vh;
+    width: 24vw;
+}
+
+.gridImage{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+.title{
+    color: #3A6B34;
+    margin: 25px 0 10px 40px;
+}
+
+.summary h2{
+    margin: 10px 0;
+    /* color: black; */
+}
+
+.summary{
+    margin: 10px 0 10px 40px;
+    color: #3A6B34;
+}
+
+
+.icon{
+    margin: 0 10px;
+}
+
+
+.AboutThePlace{
+    text-align: justify;
+    margin: 40px;
+    width: 80vw;
+}
+
+.about{
+    margin-top: 20px;
+    color: #3A6B34;
+}
+
+.AboutThePlace p{
+    font-size: 16px;
+    line-height: 24px;
+    margin: 10px 0;
+}
+
+.amenitiesTitle{
+    margin-left: 40px;
+    margin-top: 20px;
+    color: #3A6B34;
+}
+
+.amenities{
+    width: 50vw;
+    margin-top: 10px;
+    margin-left: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.amenitiesAndForm{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    border-radius: 10px;
+}
+
+form h3{
+    color: #3A6B34;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+form input, form textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: #f5f5f5;
+    font-size: 16px;
+}
+
+form button{
+    padding: 15px;
+    background: #3A6B34;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+}
+
+.houseOwener{
+    margin-top: 30px;
+    margin-left: 40px;
+    color: #3A6B34;
+}
+
+.user{
+    height: 120px;
+    width: 120px;
+    margin-left: 40px;
+}
+
+.checked{
+    color: yellow;
+}
+
+.fa-shield{
+    color: skyblue;
+}
+
+.fa-heart{
+    color: red;
+}
+
+.owner{
+    display: flex;
+}
+
+.owenerDetails{
+    margin-top: 40px;
+}
+
+.owenerDetails h3{
+    color: #3A6B34;
+}
+
+.owenerAttributes{
+    margin-right: 20px;
+}
+
+.icons{
+    margin-left: 40px;
+    line-height: 24px;
+}
+
+.icons p{
+    margin-top: 10px;
+}
+
+.rulesTitle{
+    margin-left:40px ;
+    margin-top: 30px;
+    color: #3A6B34;
+}
+
+.HouseRules h2{
+    color: #3A6B34;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.HouseRules {
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 60px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Footer */
+.footer{
+    height: 50vh;
+    background-color: rgb(203, 195, 195);
+    display: flex;
+}
+
+.First{
+    height: 50vh;
+    flex: 1;
+    /* background-color: red;    */
+    padding-left: 3rem;
+    padding-top: 3rem;
+}
+.First a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin: 1rem 0rem;
+}
+
+.Second{
+    padding-left: 3rem;
+    padding-top: 4rem;
+    height: 50vh;
+    /* background-color: yellowgreen;  */
+    flex: 1;
+    
+}
+.location{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem 0rem;
+
+}
+
+.i-1{
+    display: flex;
+    gap: 1rem;
+}
+
+
+.Third{
+    height: 50vh;
+    /* background-color: green;    */
+    flex: 1;
+    padding-left: 3rem;
+    padding-top: 3rem;
+}
+
+.Third p, .Third h4{
+    display: block;
+    margin: 1rem 0rem;
+
+}
+

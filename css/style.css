@@ -1,0 +1,269 @@
+.section {
+    position: relative;
+    height: 100vh;
+}
+
+.section .section-center {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#booking {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('/images/An+Adventure+In+Ghale+Gaun+and+Bhujung+Gaun+Pt+I+Blog+BAnner.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#booking::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: rgba(47, 103, 177, 0.301);
+}
+
+.booking-form {
+    background-color: #fff;
+    padding: 50px 20px;
+    -webkit-box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
+
+.booking-form .form-group {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.booking-form .form-control {
+    background-color: #ebecee;
+    border-radius: 4px;
+    border: none;
+    height: 40px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #3e485c;
+    font-size: 14px;
+}
+
+.booking-form .form-control::-webkit-input-placeholder {
+    color: rgba(62, 72, 92, 0.3);
+}
+
+.booking-form .form-control:-ms-input-placeholder {
+    color: rgba(62, 72, 92, 0.3);
+}
+
+.booking-form .form-control::placeholder {
+    color: rgba(62, 72, 92, 0.3);
+}
+
+.booking-form input[type="date"].form-control:invalid {
+    color: rgba(62, 72, 92, 0.3);
+}
+
+.booking-form select.form-control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.booking-form select.form-control+.select-arrow {
+    position: absolute;
+    right: 0px;
+    bottom: 4px;
+    width: 32px;
+    line-height: 32px;
+    height: 32px;
+    text-align: center;
+    pointer-events: none;
+    color: rgba(62, 72, 92, 0.3);
+    font-size: 14px;
+}
+
+.booking-form select.form-control+.select-arrow:after {
+    content: '\279C';
+    display: block;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.booking-form .form-label {
+    display: inline-block;
+    color: #3e485c;
+    font-weight: 700;
+    margin-bottom: 6px;
+    margin-left: 7px;
+}
+
+.booking-form .submit-btn {
+    display: inline-block;
+    color: #fff;
+    background-color: #1e62d8;
+    font-weight: 700;
+    padding: 14px 30px;
+    border-radius: 4px;
+    border: none;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+}
+
+.booking-form .submit-btn:hover,
+.booking-form .submit-btn:focus {
+    opacity: 0.9;
+}
+
+.booking-cta {
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.booking-cta h1 {
+    font-size: 52px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+}
+
+.booking-cta p {
+    font-size: 20px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+
+
+nav b{
+    background-color:#cbd28f;
+    font-size:20pt;
+    font-family:fantasy;
+    color:#3a6b34;
+    margin:1px;
+    text-decoration: none;
+     height:50px
+    
+}
+nav b:hover{
+    color:#e4b44c;
+    text-decoration: underline;
+}
+
+.s2{
+  background-image: url(/pictures/1.jpg);
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    opacity:0.8;
+    width:100%;
+    height:400px;
+    display:flex;
+    align-items:center;
+    justify-content:center; 
+    margin:1px; 
+    text-align: center;
+}
+.booking{
+    text-align: center;
+    background-color: aliceblue;
+     font-size:20pt;
+    max-height: 100vh;
+    width:100%;
+    color:#072204;
+    margin:3px 1px;
+    padding:1px 1px;
+    text-align: center;
+     align-items: center;
+    display:flex;
+    justify-content:space-between;
+}
+.s3{
+/*  background-color:#F0F;*/
+    width:100%;
+    height:200px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:1px; 
+}
+.suggestion{
+    width:100%;
+    font-family: fantasy;
+    color:#3a6b34;
+    font-size:30px;
+    text-decoration: underline;
+    margin:2px;
+    padding:inherit;
+    
+}
+.profile{
+    max-height: inherit;
+     width:25%;
+/*    background-color:#d40c2f;*/
+    margin:1px 1px;
+    padding:1px 1px;
+    text-align: center;
+}
+/*houses*/
+.f2{
+    height:180px;
+    width:25%;
+    margin:1px;
+    align-content:flex-start;
+
+    
+}
+/*houseowners*/
+.f3{
+    height:50px;
+    margin:1px;
+    
+        border-radius: 50%;
+}
+.reviews{
+/*  background-color:black;*/
+    width:100%;
+    height:200px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:2px; 
+}
+
+.review{
+      background-color:#cbd28f;
+    max-height:inherit;
+    width:33%;
+     margin:1px 1px;
+   color: green; 
+    border-radius: 5%;
+}
+.reviewi{
+      background-color:#cbd28f;
+    max-height:inherit;
+    width:33%;
+    color: green;
+    border-radius: 5%;
+}
+.f1{
+    height:80px;
+    margin:1px;
+    align-content: flex-start;
+     border-radius: 50%;
+}
+.map{
+    height: 300px;
+     width:100%;
+/*    background-color:#;*/
+   padding:1px 1px;
+/*    text-align: center;*/
+    align-self: center;
+   
+}
