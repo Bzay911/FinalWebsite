@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Himalayan Homes</title>
     <link rel="stylesheet" href="/css/updated-signin.css" />
-    <link rel="stylesheet" href="/css/root.css">
+    <link rel="stylesheet" href="/css/root.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -15,9 +15,13 @@
       referrerpolicy="no-referrer"
     />
 
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body>
     <!-- Navigation -->
@@ -34,108 +38,141 @@
     </div>
 
     <!-- Login part -->
-   
+
     <div class="container">
       <div class="form-box">
         <h1 id="title">Sign Up</h1>
-        <form>
+        <form id="signupForm">
           <div class="input-group">
             <div class="input-field" id="nameField">
               <i class="fa-solid fa-user"></i>
-              <input type="text" placeholder="Name">
+              <input
+                type="text"
+                placeholder="Name"
+                id="username"
+                name="username"
+              />
             </div>
 
             <div class="input-field">
               <i class="fa-solid fa-envelope"></i>
-              <input type="email" placeholder="Email">
+              <input type="email" placeholder="Email" id="email" name="email" />
             </div>
 
             <div class="input-field">
               <i class="fa-solid fa-lock"></i>
-              <input type="password" placeholder="Password">
+              <input
+                type="password"
+                placeholder="Password"
+                id="password"
+                name="password"
+              />
             </div>
-            
           </div>
           <p>Lost password <a href="#">Click here!</a></p>
           <p>Already a user? <a href="login.html">Log in..</a></p>
 
           <div class="btn-field">
-            <button type="button" id="signupBtn">Sign up</button>
+            <button type="submit" id="signupBtn">Sign up</button>
           </div>
         </form>
       </div>
     </div>
 
-  <!-- Footer -->
-  <div class="footer">
-    <div class="foot-top">
-      <div class="First">
-        <a href="/">Major attractions</a>
-        <a href="/">Plan your trip</a>
-        <a href="/">Review and rating</a>
-        <a href="/">Login/Sign up</a>
-        <a href="/">Explore more..</a>
-      </div>
-      <div class="Second">
-        <h4>Our Locations</h4>
+    <!-- Footer -->
+    <div class="footer">
+      <div class="foot-top">
+        <div class="First">
+          <a href="/">Major attractions</a>
+          <a href="/">Plan your trip</a>
+          <a href="/">Review and rating</a>
+          <a href="/">Login/Sign up</a>
+          <a href="/">Explore more..</a>
+        </div>
+        <div class="Second">
+          <h4>Our Locations</h4>
 
-        <div class="location">
+          <div class="location">
+            <div class="i-1">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>Yala Kharka</p>
+            </div>
 
-          <div class="i-1">
-            <i class="fa-solid fa-location-dot"></i>
-            <p>Yala Kharka</p>
+            <div class="i-1">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>Abu Khaireni</p>
+            </div>
           </div>
-
-          <div class="i-1">
-            <i class="fa-solid fa-location-dot"></i>
-            <p>Abu Khaireni</p>
-          </div>
-
+        </div>
+        <div class="Third">
+          <h4>Contact Us</h4>
+          <p>+977-986223532</p>
+          <h4>Email us at</h4>
+          <p>homestaynep21@gmail.com</p>
         </div>
       </div>
-      <div class="Third">
-        <h4>Contact Us</h4>
+      <div class="footend">
+        <p>Langtang Homestay</p>
+        <div class="vertical-line"></div>
         <p>+977-986223532</p>
-        <h4>Email us at</h4>
-        <p>homestaynep21@gmail.com</p>
+        <div class="vertical-line"></div>
+        <div class="l-div">
+          <i class="fa-solid fa-location-dot"></i>
+          <p>Yala Kharka</p>
+        </div>
       </div>
     </div>
-    <div class="footend">
-      <p>Langtang Homestay</p>
-      <div class="vertical-line"></div>
-      <p>+977-986223532</p>
-      <div class="vertical-line"></div>
-      <div class="l-div">
-        <i class="fa-solid fa-location-dot"></i>
-      <p>Yala Kharka</p>
-      </div>
-      
-    </div>
-    </div>
-    
+
+    <script src="../js/login.js"></script>
 
     <script>
-   
-   let signupBtn = document.getElementById("signupBtn");
- 
-
-   signupBtn.onclick = function(){
-      // nameField.style.maxHeight = "0";
-      // title.innerHTML = "Log in";
-      // signupBtn.classList.add("disable");
-      // loginBtn.classList.remove("disable");
-    alert("Successfully sign in!!")
-
-   }
-
-  //  signupBtn.onclick = function(){
-  //     nameField.style.maxHeight = "60px";
-  //     title.innerHTML = "Sign up";
-  //     signupBtn.classList.remove("disable");
-  //     loginBtn.classList.add("disable");
-  //  }
       
-    </script>
+      function validated() {
+        const username = document.getElementById("username").value;
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
 
+        // Validate username (can contain alphanumeric characters and underscores)
+        const usernameRegex = /^[a-zA-Z0-9_]+$/;
+        if (!usernameRegex.test(username)) {
+          alert("Username can only contain letters, numbers, and underscores.");
+          return false;
+        }
+
+        // Validate email using a simple email pattern (you can use a more robust regex for a better validation)
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+          alert("Invalid email address.");
+          return false;
+        }
+
+        // Validate password length (you can add more complex password rules if needed)
+        if (password.length < 6) {
+          alert("Password must be at least 6 characters long.");
+          return false;
+        }
+
+        // If all validations pass, the form will be submitted
+        return true;
+       
+      }
+
+    // Function to handle form submission and save data to local storage
+    
+    function handleFormSubmission(event) {
+      event.preventDefault(); // Prevent form submission
+
+      const form = event.target;
+      const username = form.username.value;
+      const email = form.email.value;
+      const password = form.password.value;
+
+      setUsers(username,email,password)
+    }
+
+    const form = document.getElementById("signupForm");
+    form.addEventListener("submit", handleFormSubmission);
+
+    </script>
   </body>
 </html>
