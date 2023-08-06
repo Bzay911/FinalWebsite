@@ -1,4 +1,10 @@
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    /* overflow: hidden; */
+}
 .section {
     position: relative;
     height: 100vh;
@@ -146,7 +152,7 @@ nav b {
     font-size: 20pt;
     font-family: fantasy;
     color: #3a6b34;
-    margin: 1px;
+    /* margin: 1px; */
     text-decoration: none;
     height: 50px
 }
@@ -161,13 +167,14 @@ nav b:hover {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     opacity: 0.8;
     width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 1px;
+    /* margin: 1px; */
     text-align: center;
 }
 
@@ -200,17 +207,20 @@ nav b:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1px;
+    /* margin: 20px; */
+    padding: 0 20px;
 }
 
 .suggestion {
     width: 100%;
-    font-family: fantasy;
     color: #3a6b34;
     font-size: 30px;
-    text-decoration: underline;
-    margin: 2px;
-    padding: inherit;
+    font-weight: bold;
+    margin: 20px 0;
+    padding: 0 20px;
+    /* text-decoration: underline; */
+    /* font-family: fantasy; */
+    /* padding: inherit; */
 
 }
 
@@ -218,7 +228,7 @@ nav b:hover {
     max-height: inherit;
     width: 25%;
     /*    background-color:#d40c2f;*/
-    margin: 1px 1px;
+    /* margin: 1px 1px; */
     padding: 1px 1px;
     text-align: center;
 
@@ -235,18 +245,18 @@ nav b:hover {
 
 /*houses*/
 .f2 {
-    height: 200px;
+    height: 240px;
     width: 25%;
-    margin: 1px;
+    /* margin: 1px; */
     align-content: flex-start;
-
+    object-fit: cover;
 
 }
 
 /*houseowners*/
 .f3 {
     height: 50px;
-    margin: 1px;
+    /* margin: 1px; */
 
     border-radius: 50%;
 }
@@ -258,16 +268,18 @@ nav b:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 2px;
+    margin: 20px 0;
+    padding: 0 20px;
 }
 
 .review {
     background-color: #cbd28f;
     max-height: inherit;
-    width: 33%;
-    margin: 1px 1px;
+    width: 30%;
+    /* margin: 1px 1px; */
     color: green;
-    border-radius: 5%;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 .reviewi {
@@ -280,7 +292,7 @@ nav b:hover {
 
 .f1 {
     height: 80px;
-    margin: 1px;
+    /* margin: 1px; */
     align-content: flex-start;
     border-radius: 50%;
 }
@@ -289,7 +301,7 @@ nav b:hover {
     height: 300px;
     width: 100%;
     /*    background-color:#;*/
-    margin: 5px;
+    /* margin: 5px; */
     padding: 1px 1px;
     /*    text-align: center;*/
     align-self: center;

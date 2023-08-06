@@ -8,41 +8,6 @@
 }
 
 
-/*header  */
-.navbar{
-    display: flex;
-    align-items: center;
-    padding: 0 3%;
-}
-
-.logo{
-    flex: 1;
-}
-
-.logo img{
-    height: 6rem;
-    width: 6rem;
-}
-
-.navcontents{
-    padding: 2%;
-    flex: 2;
-}
-
-.navcontents ul{
-    display: flex;
-    list-style-type: none;
-    gap: 16%;
-}
-
-.navcontents ul a{
-    /* font-weight: bold; */
-    text-decoration: none;
-    color:black;
-}
-
-/* Body */
-
 .head{
     display: flex;
     flex-direction: row;
@@ -67,6 +32,7 @@
     display: flex;
     gap: 5px;
     margin: 0 50px;
+    margin-top: 100px;
 }
 
 .mainImage{
@@ -250,60 +216,4 @@ form button{
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-/* Footer */
-.footer{
-    height: 50vh;
-    background-color: rgb(203, 195, 195);
-    display: flex;
-}
-
-.First{
-    height: 50vh;
-    flex: 1;
-    /* background-color: red;    */
-    padding-left: 3rem;
-    padding-top: 3rem;
-}
-.First a{
-    text-decoration: none;
-    color: black;
-    display: block;
-    margin: 1rem 0rem;
-}
-
-.Second{
-    padding-left: 3rem;
-    padding-top: 4rem;
-    height: 50vh;
-    /* background-color: yellowgreen;  */
-    flex: 1;
-    
-}
-.location{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin: 1rem 0rem;
-
-}
-
-.i-1{
-    display: flex;
-    gap: 1rem;
-}
-
-
-.Third{
-    height: 50vh;
-    /* background-color: green;    */
-    flex: 1;
-    padding-left: 3rem;
-    padding-top: 3rem;
-}
-
-.Third p, .Third h4{
-    display: block;
-    margin: 1rem 0rem;
-
-}
 
