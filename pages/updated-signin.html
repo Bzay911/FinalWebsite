@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Himalayan Homes</title>
-    <link rel="stylesheet" href="/css/login.css" />
+    <link rel="stylesheet" href="/css/updated-signin.css" />
     <link rel="stylesheet" href="/css/root.css">
     <link
       rel="stylesheet"
@@ -37,9 +37,14 @@
    
     <div class="container">
       <div class="form-box">
-        <h1 id="title">Log in</h1>
+        <h1 id="title">Sign Up</h1>
         <form>
           <div class="input-group">
+            <div class="input-field" id="nameField">
+              <i class="fa-solid fa-user"></i>
+              <input type="text" placeholder="Name">
+            </div>
+
             <div class="input-field">
               <i class="fa-solid fa-envelope"></i>
               <input type="email" placeholder="Email">
@@ -49,36 +54,17 @@
               <i class="fa-solid fa-lock"></i>
               <input type="password" placeholder="Password">
             </div>
-            <p class="text">Lost password <a href="#">Click here!</a></p>
-        </div>
-        
-        <p class="text">Not a user? <a href="updated-signin.html">Sign up</a></p>
+            
+          </div>
+          <p>Lost password <a href="#">Click here!</a></p>
+          <p>Already a user? <a href="login.html">Log in..</a></p>
 
           <div class="btn-field">
-            <button type="button" id="loginBtn">Log in</button>
+            <button type="button" id="signupBtn">Sign up</button>
           </div>
-
         </form>
       </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   <!-- Footer -->
   <div class="footer">
@@ -130,22 +116,24 @@
 
     <script>
    
-   let loginBtn = document.getElementById("loginBtn");
+   let signupBtn = document.getElementById("signupBtn");
+ 
 
-   loginBtn.onclick = function(){
-    //   nameField.style.maxHeight = "0";
-    //   title.innerHTML = "Log in";
-    //   signupBtn.classList.add("disable");
-    //   loginBtn.classList.remove("disable");
-    alert("Successfully Logged in!!")
+   signupBtn.onclick = function(){
+      // nameField.style.maxHeight = "0";
+      // title.innerHTML = "Log in";
+      // signupBtn.classList.add("disable");
+      // loginBtn.classList.remove("disable");
+    alert("Successfully sign in!!")
+
    }
 
-//    signupBtn.onclick = function(){
-//       nameField.style.maxHeight = "60px";
-//       title.innerHTML = "Sign up";
-//       signupBtn.classList.remove("disable");
-//       loginBtn.classList.add("disable");
-//    }
+  //  signupBtn.onclick = function(){
+  //     nameField.style.maxHeight = "60px";
+  //     title.innerHTML = "Sign up";
+  //     signupBtn.classList.remove("disable");
+  //     loginBtn.classList.add("disable");
+  //  }
       
     </script>
 
