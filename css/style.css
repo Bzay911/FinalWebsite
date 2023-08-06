@@ -1,3 +1,4 @@
+
 .section {
     position: relative;
     height: 100vh;
@@ -140,130 +141,157 @@
 
 
 
-
-nav b{
-    background-color:#cbd28f;
-    font-size:20pt;
-    font-family:fantasy;
-    color:#3a6b34;
-    margin:1px;
+nav b {
+    background-color: #cbd28f;
+    font-size: 20pt;
+    font-family: fantasy;
+    color: #3a6b34;
+    margin: 1px;
     text-decoration: none;
-     height:50px
-    
+    height: 50px
 }
-nav b:hover{
-    color:#e4b44c;
+
+nav b:hover {
+    color: #e4b44c;
     text-decoration: underline;
 }
 
-.s2{
-  background-image: url(/pictures/1.jpg);
-    background-size:cover;
-    background-position:center;
+.s2 {
+    background-image: url(/pictures/1.jpg);
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    opacity:0.8;
-    width:100%;
-    height:400px;
-    display:flex;
-    align-items:center;
-    justify-content:center; 
-    margin:1px; 
+    opacity: 0.8;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1px;
     text-align: center;
 }
+
+.space {
+    height: 50pt;
+    width: 100%;
+    background-color: aqua;
+}
+
+/*
 .booking{
     text-align: center;
     background-color: aliceblue;
      font-size:20pt;
-    max-height: 100vh;
+    max-height:inherit ;
     width:100%;
     color:#072204;
     margin:3px 1px;
-    padding:1px 1px;
+    padding;1px 1px;
     text-align: center;
      align-items: center;
     display:flex;
     justify-content:space-between;
 }
-.s3{
-/*  background-color:#F0F;*/
-    width:100%;
-    height:200px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    margin:1px; 
+*/
+.s3 {
+    /*  background-color:#F0F;*/
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1px;
 }
-.suggestion{
-    width:100%;
+
+.suggestion {
+    width: 100%;
     font-family: fantasy;
-    color:#3a6b34;
-    font-size:30px;
+    color: #3a6b34;
+    font-size: 30px;
     text-decoration: underline;
-    margin:2px;
-    padding:inherit;
-    
+    margin: 2px;
+    padding: inherit;
+
 }
-.profile{
+
+.profile {
     max-height: inherit;
-     width:25%;
-/*    background-color:#d40c2f;*/
-    margin:1px 1px;
-    padding:1px 1px;
+    width: 25%;
+    /*    background-color:#d40c2f;*/
+    margin: 1px 1px;
+    padding: 1px 1px;
     text-align: center;
+
 }
+
+.homeowner {
+    color: #3a6b34;
+    font-size: 22px;
+}
+
+.star {
+    color: yellow;
+}
+
 /*houses*/
-.f2{
-    height:180px;
-    width:25%;
-    margin:1px;
-    align-content:flex-start;
+.f2 {
+    height: 200px;
+    width: 25%;
+    margin: 1px;
+    align-content: flex-start;
 
-    
+
 }
+
 /*houseowners*/
-.f3{
-    height:50px;
-    margin:1px;
-    
-        border-radius: 50%;
-}
-.reviews{
-/*  background-color:black;*/
-    width:100%;
-    height:200px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    margin:2px; 
+.f3 {
+    height: 50px;
+    margin: 1px;
+
+    border-radius: 50%;
 }
 
-.review{
-      background-color:#cbd28f;
-    max-height:inherit;
-    width:33%;
-     margin:1px 1px;
-   color: green; 
-    border-radius: 5%;
+.reviews {
+    /*  background-color:black;*/
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2px;
 }
-.reviewi{
-      background-color:#cbd28f;
-    max-height:inherit;
-    width:33%;
+
+.review {
+    background-color: #cbd28f;
+    max-height: inherit;
+    width: 33%;
+    margin: 1px 1px;
     color: green;
     border-radius: 5%;
 }
-.f1{
-    height:80px;
-    margin:1px;
-    align-content: flex-start;
-     border-radius: 50%;
+
+.reviewi {
+    background-color: #cbd28f;
+    max-height: inherit;
+    width: 33%;
+    color: green;
+    border-radius: 5%;
 }
-.map{
+
+.f1 {
+    height: 80px;
+    margin: 1px;
+    align-content: flex-start;
+    border-radius: 50%;
+}
+
+.map {
     height: 300px;
-     width:100%;
-/*    background-color:#;*/
-   padding:1px 1px;
-/*    text-align: center;*/
+    width: 100%;
+    /*    background-color:#;*/
+    margin: 5px;
+    padding: 1px 1px;
+    /*    text-align: center;*/
     align-self: center;
-   
+
 }
