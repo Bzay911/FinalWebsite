@@ -1,4 +1,4 @@
-let rooms = [
+ let rooms = [
     {
         id:1,
         heading:"Spacious room, perfect for a family",
