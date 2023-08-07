@@ -1,0 +1,147 @@
+* {
+    margin: 2;
+    padding: 2;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    /* overflow:hidden; */
+}
+
+/*houses*/
+.f2 {
+    height: 200px;
+    width: 25%;
+    margin: 1px;
+    align-content: flex-start;
+
+
+}
+
+/*houses*/
+.firstImage{
+    width: 100vw;
+}
+.firstImage img{
+    width: 100vw;
+    height: 70vh;
+    object-fit: cover;
+    /* background-attachment: fixed; */
+}
+
+/*houselist*/
+.homes{
+    display: grid;
+    grid-template-columns: 1fr;
+    line-height: 24px;
+    gap: 15px;
+}
+
+.home{
+    width: 100%;
+    height: 200px;
+    margin: 5px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.home a{
+    text-decoration: none;
+    color: #3a6b34;
+}
+
+.home a:hover{
+    color: tomato;
+}
+
+
+.housepic {
+    width: 240px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.z1 {
+    height:200px;
+    width:20%;
+    padding-right: 5px;
+}
+
+.z2 {
+    width: 70%;
+    height: 200px;
+    padding-left: 5px;
+    font-family: 'Robotto' serif;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+}
+
+.z3 {
+    height: 200px;
+    width: 300px;
+    padding-right: 5px;
+    text-align: center;
+
+
+}
+
+.price {
+    color: #3a6b34;
+}
+
+.book {
+    background-color: #3a6b34;
+    color: white;
+    text-align: center;
+    align-self: center;
+    font-size: 18px;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.book span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+.book span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+.book:hover span {
+    padding-right: 25px;
+  }
+  
+.book:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+footer {
+    width: 100%;
+    height: 280px;
+    /*    background-color:#cbd28f;*/
+    background-color: lightgrey;
+    color: #3a6b34;
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 20px;
+}
+
+.footer a:hover {
+    color: #3a6b34;
+    text-decoration: underline;
+}
