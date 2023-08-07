@@ -28,7 +28,9 @@
           <a href="index.html">Home</a>
           <a href="about.html">About us</a>
           <a href="thingsToDo.html">Things to do</a>
-          <a href="signup.html">Sign up</a>
+
+          <a href="signup.html" id="signUp">Sign up</a>
+          <p id="checkUser" style="cursor: pointer;"></p>
         </ul>
       </div>
     </div>
@@ -37,28 +39,31 @@
    
     <div class="container">
       <div class="form-box">
-        <h1>Sign Up</h1>
-        <form>
+        <h1 id="title">Log in</h1>
+        <form id="loginForm">
           <div class="input-group">
             <div class="input-field">
-              <i class="fa-solid fa-user"></i>
-              <input type="text" placeholder="Name">
-            </div>
-
-            <div class="input-field">
               <i class="fa-solid fa-envelope"></i>
-              <input type="email" placeholder="Email">
+              <input required type="email" placeholder="Email" id="email" name="email" />
+
             </div>
 
             <div class="input-field">
               <i class="fa-solid fa-lock"></i>
-              <input type="password" placeholder="Password">
+              <input required type="password" placeholder="Password"  id="password" name="password" />
             </div>
+            <p class="text">Lost password <a href="#">Click here!</a></p>
+        </div>
+        
+        <p class="text">Not a user? <a href="updated-signin.html">Sign up</a></p>
+
+          <div class="btn-field">
+            <button  id="loginBtn">Log in</button>
           </div>
+
         </form>
       </div>
     </div>
-
 
 
 
@@ -126,26 +131,46 @@
     </div>
     
 
+    <script src="../js/login.js"></script>
+
     <script>
-      const f_name = document.querySelector(".f_name")
-      const password = document.querySelector(".password")
-      const email = document.querySelector(".email")
-      const submit_btn = document.querySelector(".submit_btn")
-
-      let users=[]
-
-      submit_btn.addEventListener("click",(e)=>{
-        e.preventDefault()
-        let user = {
-          f_name:f_name.value,
-          password:password.value,
-          email:e.value
-        }
-        users.push(user)
-        localStorage.setItem("users",JSON.stringify(users))
-        window.location.href="/"
-      })
       
+      function validated() {
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+
+        // Validate email using a simple email pattern (you can use a more robust regex for a better validation)
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+          alert("Invalid email address.");
+          return false;
+        }
+
+        // Validate password length (you can add more complex password rules if needed)
+        if (password.length < 6) {
+          alert("Password must be at least 6 characters long.");
+          return false;
+        }
+
+        // If all validations pass, the form will be submitted
+        return true;
+       
+      }
+
+    // Function to handle form submission and save data to local storage
+    
+    function handleFormSubmission(event) {
+      event.preventDefault(); // Prevent form submission
+
+      const email = form.email.value;
+      const password = form.password.value;
+
+      login(email,password)
+    }
+
+    const form = document.getElementById("loginForm");
+    form.addEventListener("submit", handleFormSubmission);
+
     </script>
 
   </body>

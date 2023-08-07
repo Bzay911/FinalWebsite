@@ -67,7 +67,7 @@ form p{
     font-size: 13px;
 }
 
-.container p a{
+ .container p a{
     text-decoration: none;
     color: #3a6b34;
 }
@@ -85,4 +85,19 @@ form p{
     border: 0;
     outline: 0;
     cursor: pointer;
+    transition: background 1s;
 }
+
+#username-error,#email-error,#password-error{
+    margin-top: 2px;
+    width: 345px;
+    font-size: 18px;
+    color: #C62828;
+    background: rgba(255,0,0,0.1);
+    text-align: center;
+    padding: 5px, 8px;
+    border-radius: 3px;
+    border: 1px solid #EF9A9A;
+    /* display: none; */
+}
+
