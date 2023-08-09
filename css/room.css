@@ -15,8 +15,7 @@
     align-items: center;
 }
 .book{
-    height: 55px;
-    width: 150px;
+    padding: 10px;
     margin-right: 300px;
     margin-top: 50px;
     border: none;
