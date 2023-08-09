@@ -3,11 +3,14 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    /* overflow: hidden; */
 }
 .section {
     position: relative;
     height: 100vh;
+}
+
+.container{
+    margin-top: 10vh;
 }
 
 .section .section-center {
@@ -146,22 +149,6 @@
 }
 
 
-
-nav b {
-    background-color: #cbd28f;
-    font-size: 20pt;
-    font-family: fantasy;
-    color: #3a6b34;
-    /* margin: 1px; */
-    text-decoration: none;
-    height: 50px
-}
-
-nav b:hover {
-    color: #e4b44c;
-    text-decoration: underline;
-}
-
 .s2 {
     background-image: url(/pictures/1.jpg);
     background-size: cover;
@@ -174,7 +161,6 @@ nav b:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* margin: 1px; */
     text-align: center;
 }
 
@@ -184,32 +170,15 @@ nav b:hover {
     background-color: aqua;
 }
 
-/*
-.booking{
-    text-align: center;
-    background-color: aliceblue;
-     font-size:20pt;
-    max-height:inherit ;
-    width:100%;
-    color:#072204;
-    margin:3px 1px;
-    padding;1px 1px;
-    text-align: center;
-     align-items: center;
-    display:flex;
-    justify-content:space-between;
-}
-*/
 .s3 {
-    /*  background-color:#F0F;*/
     width: 100%;
     height: 250px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* margin: 20px; */
     padding: 0 20px;
 }
+
 
 .suggestion {
     width: 100%;
@@ -218,25 +187,24 @@ nav b:hover {
     font-weight: bold;
     margin: 20px 0;
     padding: 0 20px;
-    /* text-decoration: underline; */
-    /* font-family: fantasy; */
-    /* padding: inherit; */
-
 }
 
 .profile {
     max-height: inherit;
     width: 25%;
-    /*    background-color:#d40c2f;*/
-    /* margin: 1px 1px; */
     padding: 1px 1px;
     text-align: center;
 
 }
 
-.homeowner {
+.homeowner a {
     color: #3a6b34;
     font-size: 22px;
+    text-decoration: none;
+}
+.homeowner i{
+    color: #3a6b34;
+    font-size: 25px;
 }
 
 .star {
@@ -247,22 +215,17 @@ nav b:hover {
 .f2 {
     height: 240px;
     width: 25%;
-    /* margin: 1px; */
     align-content: flex-start;
     object-fit: cover;
-
 }
 
 /*houseowners*/
 .f3 {
     height: 50px;
-    /* margin: 1px; */
-
     border-radius: 50%;
 }
 
 .reviews {
-    /*  background-color:black;*/
     width: 100%;
     height: 200px;
     display: flex;
@@ -276,7 +239,6 @@ nav b:hover {
     background-color: #cbd28f;
     max-height: inherit;
     width: 30%;
-    /* margin: 1px 1px; */
     color: green;
     border-radius: 10px;
     padding: 10px;
@@ -292,7 +254,6 @@ nav b:hover {
 
 .f1 {
     height: 80px;
-    /* margin: 1px; */
     align-content: flex-start;
     border-radius: 50%;
 }
@@ -300,10 +261,6 @@ nav b:hover {
 .map {
     height: 300px;
     width: 100%;
-    /*    background-color:#;*/
-    /* margin: 5px; */
-    padding: 1px 1px;
-    /*    text-align: center;*/
+   padding: 1px 1px;
     align-self: center;
-
 }
