@@ -39,7 +39,7 @@ function setUsers(username,email,password){
     }
     users.push(user)
     localStorage.setItem("users",JSON.stringify(users))
-    window.location.href = "/pages"
+    window.location.href = "/pages/login.html"
 }
 
 //from login
@@ -52,7 +52,7 @@ function login(email,password){
             localStorage.setItem("loggedUser",lUser)
             sign.style.display="none"
             checkUser.innerHTML = "Logout, "+ loggedUser
-            window.location.href = "/pages"
+            window.location.href = "/pages/homelist.html"
             break
         }
    }

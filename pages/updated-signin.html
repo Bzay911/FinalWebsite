@@ -50,13 +50,13 @@
                 type="text"
                 placeholder="Name"
                 id="username"
-                name="username"
+                name="username" required
               />
             </div>
 
             <div class="input-field">
               <i class="fa-solid fa-envelope"></i>
-              <input type="email" placeholder="Email" id="email" name="email" />
+              <input type="email" placeholder="Email" id="email" name="email" required/>
             </div>
 
             <div class="input-field">
@@ -65,7 +65,7 @@
                 type="password"
                 placeholder="Password"
                 id="password"
-                name="password"
+                name="password" required
               />
             </div>
           </div>
@@ -83,11 +83,11 @@
     <div class="footer">
       <div class="foot-top">
         <div class="First">
-          <a href="/">Major attractions</a>
-          <a href="/">Plan your trip</a>
-          <a href="/">Review and rating</a>
-          <a href="/">Login/Sign up</a>
-          <a href="/">Explore more..</a>
+          <a href="thingsToDo.html">Major attractions</a>
+          <a href="homelist.html">Plan your trip</a>
+          <a href="index.html">Review and rating</a>
+          <a href="updated-signin.html">Login/Sign up</a>
+          <a href="index.html">Explore more..</a>
         </div>
         <div class="Second">
           <h4>Our Locations</h4>
@@ -126,7 +126,6 @@
     <script src="../js/login.js"></script>
 
     <script>
-      
       function validated() {
         const username = document.getElementById("username").value;
         const email = document.getElementById("email").value;
@@ -154,25 +153,23 @@
 
         // If all validations pass, the form will be submitted
         return true;
-       
       }
 
-    // Function to handle form submission and save data to local storage
-    
-    function handleFormSubmission(event) {
-      event.preventDefault(); // Prevent form submission
+      // Function to handle form submission and save data to local storage
 
-      const form = event.target;
-      const username = form.username.value;
-      const email = form.email.value;
-      const password = form.password.value;
+      function handleFormSubmission(event) {
+        event.preventDefault(); // Prevent form submission
 
-      setUsers(username,email,password)
-    }
+        const form = event.target;
+        const username = form.username.value;
+        const email = form.email.value;
+        const password = form.password.value;
 
-    const form = document.getElementById("signupForm");
-    form.addEventListener("submit", handleFormSubmission);
+        setUsers(username, email, password);
+      }
 
+      const form = document.getElementById("signupForm");
+      form.addEventListener("submit", handleFormSubmission);
     </script>
   </body>
 </html>
