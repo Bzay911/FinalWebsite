@@ -44,6 +44,7 @@ function setUsers(username,email,password){
 
 //from login
 function login(email,password){
+    let isCorrect = false
    for(var i=0;i<=users.length;i++){
         if(users[i]?.email == email && users[i]?.password == password){
             isLoggedIn = true
@@ -53,8 +54,12 @@ function login(email,password){
             sign.style.display="none"
             checkUser.innerHTML = "Logout, "+ loggedUser
             window.location.href = "/pages/homelist.html"
+            isCorrect = true
             break
         }
+   }
+   if(!isCorrect){
+    alert("Invalid Credentials!")
    }
 }
 
